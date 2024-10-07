@@ -10,778 +10,672 @@ namespace c_2509_1st
     {
         static void Main(string[] args)
         {
-            //lab1: Write a C# program to print the multiplication table of a given number using the for loop.
+            //LAB 1
 
-            //Console.WriteLine("Enter the number : ");
-            //int Number = Convert.ToInt32(Console.ReadLine());
-            //for (int i = 1; i <= 10; i++)
-            //{
-            //    Console.WriteLine($"{Number} * {i} = {Number * i}");
-            //}
-            //Console.ReadLine();
-
-
-            //LAB2 : Write a C# program to display a right-angled triangle pattern using nested for loops.
-
-            //Console.WriteLine("Enter the number of rows: ");
-            //int Number_of_Rows = Convert.ToInt32(Console.ReadLine());
-            //for (int i = 0; i < Number_of_Rows; i++)
-            //{
-            //    for (int j = 0; j <= i; j++)
-            //    {
-            //        Console.Write("* ");
-            //    }
-            //    Console.WriteLine();
-            //}
-            //Console.ReadLine();
-
-            //LAB3: Write a C# program to calculate the sum of all even numbers between 1 and 100 using a while loop
-
-            //int sum = 0;
-            //int i = 1;
-            //while (i <= 100)
-            //{
-            //    if (i % 2 == 0)
-            //    {
-            //        sum += i;
-            //    }
-            //    i += 1;
-
-            //}
-            //Console.WriteLine($"sum of even numbers between 1 and 100 is {sum}");
-            //Console.ReadLine();
-
-
-            //LAB4 : Write a C# program to print a multiplication table from 1 to 5 using nested while loops.
-
-            //int i = 1;
-
-            //while (i <= 5)
-            //{
-            //    int j = 1;
-            //    while (j<=10)
-            //    {
-            //        Console.WriteLine($"{i} * {j} = {i * j}");
-            //        j += 1;
-            //    }
-            //    Console.WriteLine();
-            //    i += 1;
-            //}
+            //Console.WriteLine("HELLO WORLD");
+            //Console.WriteLine("Enter your name : ");
+            //string name = Console.ReadLine();
+            //Console.WriteLine(" Hello " + name +  " Welcome to the day 1 assignment");
             //Console.ReadLine() ;
 
+            //LAB 2 
 
-            //LAB5: Write a C# program to keep asking the user to enter a positive number and print it. The program
-            // should stop when the user enters a negative number.
-
-            //int Number;
-            //do
-            //{
-            //    Console.WriteLine("Enter a positive number");
-            //    Number = Convert.ToInt32(Console.ReadLine());
-            //    if (Number > 0)
-            //    {
-            //        Console.WriteLine($"{Number} is positive ");
-
-            //    }
-            //    else if (Number == 0)
-            //    {
-            //        Console.WriteLine("neither positive nor negative ");
-            //    }
-            //}
-            //while (Number >= 0);
-            //{
-            //    Console.WriteLine("The program has ended ");
-            //    //return; 
-
-
-            //}
+            //Console.WriteLine("enter the full name ");
+            //string name = Console.ReadLine();
+            //Console.WriteLine("Enter the age ");
+            //int age = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter your Favorite color");
+            //string color = Console.ReadLine();
+            //Console.WriteLine($"Hello {name}! You are {age} years old, Your favorite color is {color}");
+            ////Console.WriteLine("Hello " + name + "! You are " + age + " years old. Your favorite color is " + color);
             //Console.ReadLine();
 
 
+            //LAB 3
+            //Console.WriteLine("enter the value : ");
+            //int a = Convert.ToInt32(Console.ReadLine());
+            //int b = Convert.ToInt32(Console.ReadLine());
 
-            //lab6: Write a C# program to create a basic menu-driven calculator using nested do-while loops. The
-            //calculator should continue to ask the user for two numbers and an operation(+, -, *, /) until the
-            //user chooses to exit.
-            //char Operator;
-            //int First_Number;
-            //int Second_Number;
-            //char option;
+            //int div = 0;
 
-            //do
+            //if (a > b && b!=0)
             //{
-
-            //    Console.WriteLine("Enter the first number");
-            //    First_Number = Convert.ToInt32(Console.ReadLine());
-            //    Console.WriteLine("Enter the operator ( + - * / ) ");
-            //    Operator = Convert.ToChar(Console.ReadLine());
-            //    Console.WriteLine("Enter the second number");
-            //    Second_Number = Convert.ToInt32(Console.ReadLine());
-            //    if (Operator == '+')
-            //    {
-            //        Console.WriteLine($"{First_Number} {Operator} {Second_Number} = {First_Number + Second_Number}");
-            //    }
-            //    else if (Operator == '-')
-            //    {
-            //        Console.WriteLine($"{First_Number} {Operator} {Second_Number} = {First_Number - Second_Number}");
-            //    }
-            //    else if (Operator == '*')
-            //    {
-            //        Console.WriteLine($"{First_Number} {Operator} {Second_Number} = {First_Number * Second_Number}");
-            //    }
-            //    else if (Operator == '/')
-            //    {
-            //        if (Second_Number == 0)
-            //        {
-            //            Console.WriteLine("INVALID");
-            //        }
-            //        else
-            //        {
-            //            Console.WriteLine($"{First_Number} {Operator} {Second_Number} = {First_Number / Second_Number}");
-            //        }
-            //    }
-            //    Console.WriteLine("exit or Conitinue (E/C)");
-            //    option = Convert.ToChar(Console.ReadLine());
+            //    div = a / b;
+            //    Console.WriteLine($"Division = {div}");
             //}
-            //while (option != 'e' && option != 'E');
+            //else if (b > a && a!=0)
             //{
-            //    Console.WriteLine("The user has chose to exit");
+            //    div = b / a;
+            //    Console.WriteLine($"Division = {div}");
+
 
             //}
+            //else 
+            //{
+            //    Console.WriteLine("Division not possible");
+
+
+            //}
+            //Console.WriteLine($"sum = {a + b} difference ={a - b} multiplication = {a * b}");
+
             //Console.ReadLine();
 
 
+            ////LAB 4
+            //Console.WriteLine("Enter the temperature in celsius : ");
+            //double temp = Convert.ToDouble(Console.ReadLine());
+            //double far = 0;
+            //far = (temp * 1.8) + 32;
+            //Console.WriteLine($"temp in farenheit is {far}");
+            //Console.ReadLine();
 
-            //LAB7 : Write a C# program to print all numbers from 1 to 100. Use the continue statement to skip
-            //numbers that are divisible by 3, and use the break statement to stop the loop if the number
-            //exceeds 50.
 
-            //for (int i = 1; i <= 100; i++)
+            //LAB 5
+            //Console.WriteLine("enter the AMOUNT");
+            //int PrincipalAmount = Convert.ToInt32((Console.ReadLine()));
+            //Console.WriteLine("enter the ROI");
+            //double RateofInterest = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("enter the TIME");
+            //int Time = Convert.ToInt32((Console.ReadLine()));
+            //double SimpleInterest;
+            //SimpleInterest = (PrincipalAmount * RateofInterest * Time) / 100;
+            //Console.WriteLine($" Simple interest is {SimpleInterest}");
+            //Console.ReadLine();
+
+            //LAB 6
+            //Console.WriteLine("ENTER THE RADIUS ");
+            //Double Radius = Convert.ToDouble(Console.ReadLine());
+            //Double Area;
+            //const double Pi = 3.14;
+            //Area = Pi * Radius * Radius;
+            //Console.WriteLine($"The area is {Area}");
+            //Console.ReadLine();
+
+            //LAB 7
+            //Console.WriteLine("Enter the Seconds");
+            //int TotalSeconds = Convert.ToInt32(Console.ReadLine());
+            //int Hours;
+            //int Minutes;
+            //int Seconds;
+            //Hours = TotalSeconds / 3600;
+            //Minutes = (TotalSeconds % 3600) / 60;
+            //Seconds = (TotalSeconds % 60);
+            //Console.WriteLine($"Converted time is {Hours} hour {Minutes} minute {Seconds} Seconds");
+            //Console.ReadLine();
+
+            //LAB 8
+            //Console.WriteLine("Enter a sentence : ");
+            //string Sentence = Console.ReadLine();
+            //string SpaceExcludedString = Sentence.Replace(" ", "");
+            //int Length = SpaceExcludedString.Length;
+            //Console.WriteLine("the output is : " + SpaceExcludedString + " and the length is : " + Length);
+            //Console.ReadLine();
+
+            //LAB9
+            //Console.WriteLine("Enter the Weight");
+            //Double Weight = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Enter the height ");
+            //Double Height = Convert.ToDouble(Console.ReadLine());
+            //Double BodyMassIndex = Weight / (Height * Height);
+            //Console.WriteLine("The body mass index is " + BodyMassIndex);
+            //Console.ReadLine();
+
+            //LAB10
+
+            //int Integer = 30;
+            //Double Doublev = 2.6;
+            //char Character = 'a';
+            //string String = "hello";
+            //bool Boolean = true;
+            //float value = 3.14565555255f;
+            //Console.WriteLine($"{Integer} is a {Integer.GetTypeCode()}");
+
+            //Console.WriteLine($"{Doublev} is a {Doublev.GetTypeCode()}");
+            //Console.WriteLine($"{Character} is a {Character.GetTypeCode()}");
+            //Console.WriteLine($"{String} is a {String.GetTypeCode()}");
+            //Console.WriteLine($"{Boolean} is a {Boolean.GetTypeCode()}");
+            //Console.WriteLine($"{value} is a float type ");
+            //Console.ReadLine();
+
+            //LAB11
+            //Console.WriteLine("Enter the Radius : ");
+            //Double Radius = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Enter the length :");
+            //int Length = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the breadth :");
+            //int Breadth = Convert.ToInt32(Console.ReadLine());
+            //const double pi = 3.14;
+            //Double AreaofCircle;
+            //Double AreaofRectangle;
+            //AreaofCircle = pi * Radius * Radius;
+            //AreaofRectangle = Length * Breadth;
+            //Console.WriteLine($" Area of circle is {AreaofCircle} and area of rectangle is {AreaofRectangle}");
+            //Console.ReadLine();
+
+
+            //lab12
+            //const Double PI= 3.14159;
+            //const int DAYS_IN_A_WEEK = 7;
+            //Console.WriteLine("Enter the radius : ");
+            //int Radius = Convert.ToInt32(Console.ReadLine());
+            //Double Circumference = 2 *  PI * Radius;
+            //Console.WriteLine("Circumference of teh circle is " + Circumference + " and days in a week is " + DAYS_IN_A_WEEK);
+            //Console.ReadLine();
+
+            //LAB13
+            //Console.WriteLine("Enter the width in cm");
+            //Double Width = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Enter the height in cm");
+            //Double Height = Convert.ToDouble(Console.ReadLine());
+            //const Double Inches = 0.3937;
+            //Double Area = Width * Height;
+            //Double AreainInches = Area * Inches;
+            //Console.WriteLine($"Area of rectangle in inches {AreainInches} and in centimeter {Area}");
+            //Console.ReadLine();
+
+            //LAB14
+            //Console.WriteLine("Enter the Employee name : ");
+            ////input the employee name
+            //string EmployeeName = Console.ReadLine();
+            //Console.WriteLine("Enter the employee age : ");
+            /////input the age
+            //int EmployeeAge = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the Employee Salary : ");
+            ////input the salary
+            //int EmployeeSalary = Convert.ToInt32(Console.ReadLine());
+            ////Printing the input in as single sentence 
+            //Console.WriteLine($"{EmployeeName} is the name of Employee, {EmployeeAge} years old , with a salary of {EmployeeSalary} per month ");
+            //Console.ReadLine();
+
+
+            //LAB15
+            ////INPUT NUMBER1
+            //int Number1 = 5;
+            ////INPUT NUMBER2
+            //int Number2 = 3;
+            ////ADDING THE NUMBERS AND PRINTING IT
+            //Console.WriteLine(Number1 + Number2);
+            //Console.ReadLine();
+
+            //LAB16
+            //int Number = 10;
+            //Console.WriteLine($"{Number} is the initial value ");
+            //Number += 20;
+            //Console.WriteLine($"{Number} is the added  value ");
+            //Number -= 15;
+            //Console.WriteLine($"{Number} is the substracted value ");
+            //Console.ReadLine();
+
+            //LAB17
+
+            //Console.WriteLine("Enter the base value ");
+            //Double Base_Value = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Enter the exponent value ");
+            //Double Exponent_Value = Convert.ToDouble(Console.ReadLine());
+            //Double Power_of_number = Math.Pow(Base_Value, Exponent_Value);
+            //Console.WriteLine($"The output of the {Base_Value} to the power of {Exponent_Value} is {Power_of_number}");
+            //Console.ReadLine();
+
+            //LAB18
+
+            //Console.WriteLine("Enter the name of the candidate : ");
+            //string Name_of_Candidate = Console.ReadLine();
+            //Console.WriteLine("Enter the Nationality of the candidate : Indian / other");
+            //String Nationality = Console.ReadLine();
+            //const string indian = "indian";
+            //const string Indian = "Indian";
+            //const string INDIAN = "INDIAN";
+            //if (Nationality == Indian || Nationality == indian || Nationality == INDIAN)
             //{
-            //    if (i % 3 == 0)
+            //    Console.WriteLine("Continue to enter the age ");
+            //    Console.WriteLine("Enter the age of the candidate : ");
+            //    int Age = Convert.ToInt32(Console.ReadLine());
+            //    if (Age >= 18)
             //    {
-            //        continue;
-            //    }
-            //    else if (i > 50)
-            //    {
-            //        break;
-
+            //        Console.WriteLine($"{Name_of_Candidate} is eligible of voting");
+            //        ;
             //    }
             //    else
             //    {
-            //        Console.Write(i + " ");
-            //    }
-
-            //}
-            //Console.ReadLine();
-
-            //LAB8: Write a C# program to calculate the sum of all odd numbers between 1 and 100 using a for loop.
-            //int sum = 0;
-            //for (int i = 1; i <= 100; i++)
-            //{
-            //    if (i % 2 != 0)
-            //    {
-            //        sum += i;
-            //    }
-            //}
-            //Console.WriteLine($"Sum of all odd numbers between 1 and 100 {sum}");
-            //Console.ReadLine();
-
-            //LAB9: Write a C# program to calculate the factorial of a given number using a while loop.
-            //Console.WriteLine("Enter the number greater than 0 ");
-            //int num = Convert.ToInt32(Console.ReadLine());
-            //int i = 1;
-            //int Factorial = 1;
-            //while (i <= num)
-            //{
-            //    Factorial *= i;
-            //    i++;
-            //}
-            //Console.WriteLine($"factorial of {num} = {Factorial}");
-            //Console.ReadLine();
-
-
-            //LAB10: Write a C# program to print a number pyramid using a nested while loop. Example for 5 rows:
-            //Console.WriteLine("Enter the number of rows : ");
-            //int Number_of_Rows = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine();
-            //for (int i=0; i<Number_of_Rows; i++)
-            //{
-            //    for (int j=0;j<=i;j++)
-            //    {
-            //        Console.Write(i + 1);
-            //    }
-            //    Console.WriteLine();
-            //}
-            //Console.ReadLine();
-
-            //Random Random = new Random();
-            //Char Play_Again;
-
-            //    int Random_Number = Random.Next(1, 101);
-            //    Console.WriteLine("welcome to guess the random number game ");
-            //    Console.WriteLine("The number to be guessed is between 1 and 100");
-            //    Console.WriteLine("TRY IT OUT!!!");
-
-            //do
-            //{
-            //    Console.WriteLine("Enter your Guess : ");
-            //    int Guess = Convert.ToInt32(Console.ReadLine());
-            //    if (Guess > Random_Number)
-            //    {
-            //        Console.WriteLine("OOPS TOO HIGH ");
-            //        Console.WriteLine($"the answer is {Random_Number}");
-            //    }
-            //    else if (Guess < Random_Number)
-            //    {
-            //        Console.WriteLine("OOPS TOO LOWWW");
-            //        Console.WriteLine($"the answer is {Random_Number}");
-            //    }
-            //    else if (Guess == Random_Number)
-            //    {
-            //        Console.WriteLine("CONGRATULATION!!! YOU WON THE GAME");
-            //    }
-            //    Console.WriteLine("Do you wish to try again : (y/n)");
-            //    Play_Again = Convert.ToChar(Console.ReadLine());
-            //}
-            //while (Play_Again != 'n' && Play_Again != 'N');
-            //    {
-            //        Console.WriteLine("Thankyou for playing");
-            //        Console.WriteLine("VISIT AGAIN");
-            //    }
-
-
-            //    Random random = new Random();
-            //    bool playAgain = true;
-
-            //    do
-            //    {
-            //        int targetNumber = random.Next(1, 101); // Generates a random number between 1 and 100
-            //        int guess = 0;
-            //        int attempts = 0;
-
-            //        Console.WriteLine("Welcome to the 'Guess the Number' game!");
-            //        Console.WriteLine("I have chosen a number between 1 and 100. Try to guess it!");
-
-            //        do
-            //        {
-            //            Console.Write("Enter your guess: ");
-            //            string input = Console.ReadLine();
-
-            //            if (int.TryParse(input, out guess))
-            //            {
-            //                attempts++;
-            //                if (guess < targetNumber)
-            //                {
-            //                    Console.WriteLine("Too low!");
-            //                }
-            //                else if (guess > targetNumber)
-            //                {
-            //                    Console.WriteLine("Too high!");
-            //                }
-            //                else
-            //                {
-            //                    Console.WriteLine($"Congratulations! You guessed the number {targetNumber} in {attempts} attempts.");
-            //                }
-            //            }
-            //            else
-            //            {
-            //                Console.WriteLine("Please enter a valid number.");
-            //            }
-            //        }
-            //        while (guess != targetNumber);
-            //        {
-
-            //            Console.Write("Do you want to play again? (yes/no): ");
-            //            string response = Console.ReadLine().ToLower();
-            //            playAgain = response == "yes";
-
-            //        }
+            //        Console.WriteLine($"{Name_of_Candidate}  is not eligilble for voting");
 
             //    }
-            //        while (playAgain);
-            //    {
-
-            //        Console.WriteLine("Thank you for playing!");
-            //    }
-
-            //Console.ReadLine();
-
-
-
-
-            //LAB12: Write a C# program to create a simple calculator using a switch-case statement. The program
-            //should handle addition, subtraction, multiplication, and division.
-
-            //Console.WriteLine("Enter the first number");
-            //int First_Number = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("Enter the operator ( + - * / ) ");
-            //Console.WriteLine("1. Addition -> +");
-            //Console.WriteLine("2. Substraction -> -");
-            //Console.WriteLine("3. Multiplication -> *");
-            //Console.WriteLine("4. Division -> /");
-            //char Operator = Convert.ToChar(Console.ReadLine());
-            //Console.WriteLine("Enter the second number");
-            //int Second_Number = Convert.ToInt32(Console.ReadLine());
-            //switch(Operator)
-            //{
-            //    case '+':
-            //        Console.WriteLine($"The output is {First_Number + Second_Number}");
-            //        break;
-            //    case '-':
-            //        Console.WriteLine($"The output is {First_Number - Second_Number}");
-            //        break;
-            //    case '*':
-            //        Console.WriteLine($"The output is {First_Number * Second_Number}");
-            //        break;
-            //    case '/':
-            //        if (Second_Number != 0)
-            //        {
-            //            Console.WriteLine($"The output is {First_Number + Second_Number}");
-            //        }
-            //        else
-            //        {
-            //            Console.WriteLine("invalid");
-            //        }
-            //        break;
-
-            //}
-            //Console.ReadLine();
-
-
-            //LAB13: Write a C# program that accepts a number from the user and calculates the sum of its digits using
-            //a do -while loop.
-
-            //Console.WriteLine("Enter the number : ");
-            //int Number = Convert.ToInt32(Console.ReadLine());
-            //int sum = 0;
-
-            //do
-            //{
-            //    sum += Number%10;
-            //    Number /= 10;
-            //}
-            //while (Number > 0);
-            //{
-            //    Console.WriteLine($"sum of its digit is {sum}");
-            //}
-            //Console.ReadLine();
-
-            //lab14: Write a C# program that accepts 10 numbers from the user and finds the largest number using a
-            //for loop.
-            //int[] Numbers = new int[10];
-            //int temp;
-            //for (int i = 0; i < 10; i++)
-            //{
-            //    Console.WriteLine("enter 10 numbers :" + (i + 1));
-            //    Numbers[i] = Convert.ToInt32(Console.ReadLine());
-            //}
-            //for (int x = 0; x < 10; x++)
-            //{
-            //    for (int y = x + 1; y < 10; y++)
-            //    {
-            //        if (Numbers[x] <= Numbers[y])
-            //        {
-            //            temp = Numbers[x];
-            //            Numbers[x] = Numbers[y];
-            //            Numbers[y] = temp;
-            //        }
-            //    }
-            //}
-            //Console.WriteLine($"The larget element is {Numbers[0]}");
-
-            //Console.ReadLine();
-
-            //LAB15: Write a C# program to calculate the sum of squares of all numbers from 1 to a user-provided
-            //number using a while loop.
-
-            //Console.WriteLine("Enter the number : ");
-            //int Number = Convert.ToInt32(Console.ReadLine());
-            //int i = 1;
-            //int sum = 0;
-            //while (i <= Number)
-            //{
-            //    sum += (i * i);
-            //    i++;
-            //}
-            //Console.WriteLine($"{sum} is the sum of square of numbers from 1 to {Number}");
-            //Console.ReadLine();
-
-
-
-
-            //LAB16: Write a C# program to simulate a countdown timer from 10 to 1 using a do-while loop, 
-            //displaying each second.
-            //int counter = 10;
-            //do
-            //{
-            //    Console.WriteLine(counter);
-            //    counter--;
-            //    Thread.Sleep(1000); 
-            //} 
-            //while (counter > 0);
-            //{
-
-            //    Console.WriteLine("Time's up!");
-            //}
-            //Console.ReadLine();
-
-
-
-            //LAB17:Write a C# program to find and print the first multiple of 5 in a given list of numbers. Use the 
-            //break statement to exit the loop once a multiple of 5 is found.
-            //int size = 10;
-            //int[] numbers = new int[size];
-            //Console.WriteLine("Enter 10 values  :");
-            //for (int j=0;j<size;j++)
-            //{
-            //    numbers[j] = Convert.ToInt32(Console.ReadLine());
-            //}
-            //for (int i = 0; i < numbers.Length; i++) {
-            //    if (numbers[i] % 5 == 0) {
-            //        Console.WriteLine($"{numbers[i]} is the first multiple of 5 in thegiven 10 values");
-            //        break;
-            //            }
-            //    else {
-            //        continue;
-            //    }
-            //}
-            //Console.ReadLine();
-
-
-
-            //LAB18: Write a C# program to print numbers from 1 to 20, but skip numbers that are divisible by 3 using 
-            //the continue statement.
-            //for (int i = 1; i <= 20; i++)
-            //{
-            //    if (i % 3 == 0)
-            //    {
-            //        continue;
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine(i);
-            //    }
-            //}
-            //Console.ReadLine();
-
-
-            //LAB19: Write a C# program to check if a given number is a palindrome using a while loop.
-            //Console.WriteLine("Enter the number to checked ");
-            //int Number= Int32.Parse(Console.ReadLine());
-            //int Original_Number = Number;
-            //int Reverse_Number =0;
-            //int Temp;
-            //while (Number!=0)
-            //{
-            //    Temp = Number % 10;
-            //    Reverse_Number=(Reverse_Number * 10) + Temp;
-            //    Number = Number / 10;
-            //}
-            //if (Original_Number == Reverse_Number)
-            //{
-            //    Console.WriteLine($"{Original_Number} is a pallindrome");
             //}
             //else
             //{
-            //    Console.WriteLine($"{Original_Number} is not a pallindrome");
+            //    Console.WriteLine($"{Name_of_Candidate} is not eligible for voting ");
+
             //}
             //Console.ReadLine();
 
-            //LAB20: Write a C# program to calculate the average of positive numbers entered by the user. The 
-            //program should stop when the user enters a negative number using a do -while loop.
-            //int Average;
-            //    int sum = 0;
-            //    Console.WriteLine("Enter the size of number ");
-            //    int size = Convert.ToInt32(Console.ReadLine());
-            //    int[] numbers = new int[size];
-            //    Console.WriteLine($"Enter {size} positive values  :");
-            //    for (int j = 0; j < size; j++)
+
+            //LAB19
+
+            //Console.WriteLine("Enter the name of the applicant : ");
+            //string Name_of_Applicant = Console.ReadLine();
+            //Console.WriteLine("Enter the age of the applicant : ");
+            //int Age_of_Applicant =Convert.ToInt32(Console.ReadLine());
+            //if (Age_of_Applicant >= 21)
+            //{
+            //    Console.WriteLine("Enter the Annual Salary of the applicant : ");
+            //    int Annual_Salary_of_Applicant = Convert.ToInt32(Console.ReadLine());
+            //    if (Annual_Salary_of_Applicant >= 30000)
             //    {
-            //        numbers[j] = Convert.ToInt32(Console.ReadLine());
-            //        if (numbers[j] < 0)
+            //        Console.WriteLine("Any outstanding loan (Y / N) : ");
+            //        char Pending_Loan = Convert.ToChar(Console.ReadLine());
+            //        if ((Pending_Loan == 'n') || (Pending_Loan == 'N'))
             //        {
-            //            Console.WriteLine("entered a negative value. ");
-            //            break;
+            //            Console.WriteLine($"{Name_of_Applicant} is eligible for the applied loan ");
+
             //        }
             //        else
             //        {
-            //            sum += numbers[j];
+            //            Console.WriteLine($"{Name_of_Applicant} is not eligible for the applied loan");
             //        }
-
-            //    }
-            //    int checksum = 0;
-            //    for (int k=0; k < size; k++)
-            //    {
-            //        checksum += numbers[k];
-
-            //    }
-
-            //    do
-            //    {
-            //        int Average;
-            //        if (checksum == sum)
-            //        {
-            //            Average = checksum / size;
-            //            Console.WriteLine($"Average of the values is {Average}");
-            //            continue;
-
-            //        }
-            //        Console.WriteLine("the answer found");
-
-            //    }
-            //    while (checksum == sum);
-            //    {
-            //        Console.WriteLine($"Therefore program is stopped");
-            //    }
-            //    Console.ReadLine();
-            //}
-
-
-
-            //LAB21: Write a C# program to reverse a given number using a do-while loop. 
-            //Console.WriteLine("Enter the number to checked ");
-            //int Number = Int32.Parse(Console.ReadLine());
-            //int Original_Number = Number;
-            //int Reverse_Number = 0;
-            //int Temp;
-            //do
-            //{
-            //    if (Number >= 0)
-            //    {
-            //        Temp = Number % 10;
-            //        Reverse_Number = (Reverse_Number * 10) + Temp;
-            //        Number = Number / 10;
-            //    }
-
-
-            //}
-            //while (Number!=0);
-            //{
-            //    Console.WriteLine($"{Reverse_Number} is the reverse of {Original_Number}");
-            //}
-            //Console.ReadLine();
-
-
-            //LAB22: Write a C# program that presents a menu to the user for various string operations: 
-            //1.Reverse the string
-            //2.Convert to uppercase
-            //3.Convert to lowercase
-            //4.Find the length of the string
-            //Use a switch-case statement to implement this.
-            //Console.WriteLine("Enter the string :");
-            //string Str = Console.ReadLine();
-            //Console.WriteLine("Enter the operation ");
-            //Console.WriteLine("To choose the operation enter the number of the operation between 1, 2, 3 and 4");
-            //Console.WriteLine("1. Reverse the string");
-            //Console.WriteLine("2. Convert to uppercase ");
-            //Console.WriteLine("3.Convert to lowercase");
-            //Console.WriteLine("4. Find the length of the string ");
-            //int Operation = Convert.ToInt32(Console.ReadLine());
-            //switch (Operation)
-            //{
-            //    case 1:
-
-            //        //string Reversed_str;
-            //        string Reversed_str = string.Empty;
-            //        for (int i = Str.Length - 1; i >= 0; i--)
-            //        {
-            //            Reversed_str += Str[i];
-            //        }
-            //        Console.WriteLine($"reversed string is {Reversed_str}");
-            //        break;
-            //    case 2:
-            //        string Output_string = Str.ToUpper();
-            //        Console.WriteLine($"{Output_string} is the upper case");
-            //        break;
-            //    case 3:
-            //        string lower_str = Str.ToLower();
-            //        Console.WriteLine($"{lower_str} is the lower case");
-            //        break;
-            //    case 4:
-            //        int length_of_string = Str.Length;
-            //        Console.WriteLine($"{length_of_string} is the length");
-            //        break;
-            //}
-            //Console.ReadLine();
-
-
-            //LAB23: Write a C# program to print numbers from 1 to 50 but skip numbers that are divisible by 4 using 
-            //the continue statement.
-            //for (int i = 0; i <= 50; i++)
-            //{
-            //    if (i % 4 == 0)
-            //    {
-            //        continue;
             //    }
             //    else
             //    {
-            //        Console.Write(i);
+            //        Console.WriteLine($"{Name_of_Applicant} is not eligible for the applied loan");
             //    }
-
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{Name_of_Applicant} is not eligible for the applied loan");
             //}
             //Console.ReadLine();
 
 
-            //LAB24: Write a C# program to print the first 10 numbers in the Fibonacci sequence using a for loop.
-            //int firstNumber = 0, secondNumber = 1, nextNumber;
-            //Console.WriteLine("The first 10 numbers in the Fibonacci sequence are:");
-            //Console.Write($"{firstNumber} {secondNumber} ");
-            //for (int i = 2; i < 10; i++)
-            //{
-            //    nextNumber = firstNumber + secondNumber;
-            //    Console.Write(nextNumber + " ");
-            //    firstNumber = secondNumber;
-            //    secondNumber = nextNumber;
-            //}
-            //Console.ReadLine();
+            //LAB20
 
-
-            //LAB25: Write a C# program to find all Armstrong numbers between 1 and 500 using a while loop. (An 
-            //Armstrong number is a number that is equal to the sum of the cubes of its digits).
-            //int number = 1;
-            //while (number <= 500)
+            //Console.WriteLine("Enter the name of the applicant : ");
+            //string Name_of_Applicant = Console.ReadLine();
+            //Console.WriteLine("Enter the age of the applicant : ");
+            //int Age_of_Applicant = Convert.ToInt32(Console.ReadLine());
+            //if (Age_of_Applicant >= 18 && Age_of_Applicant <= 35)
             //{
-            //    int sumOfCubes = 0;
-            //    int temp = number;
-            //    int digits = number;
-            //    while (digits > 0)
+            //    Console.WriteLine("Enter the Work Experience :");
+            //    int Work_Experience = Convert.ToInt32(Console.ReadLine());
+            //    //Console.WriteLine("Do you have a college degree (Y/N)");
+            //    //Char College_Degree = Convert.ToChar(Console.ReadLine());
+            //    if (Work_Experience >= 2)
             //    {
-            //        int digit = digits % 10;
-            //        sumOfCubes += digit * digit * digit;
-            //        digits /= 10;
-            //    }
+            //        Console.WriteLine("Do you have a college degree (Y/N)");
+            //        Char College_Degree = Convert.ToChar(Console.ReadLine());
+            //        if (College_Degree == 'y' || College_Degree == 'Y' || Work_Experience >= 5)
+            //        {
+            //            Console.WriteLine($"{Name_of_Applicant} is eligible to apply for the job");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine($"{Name_of_Applicant} is not eligible to apply for the job");
+            //        }
 
-            //    if (sumOfCubes == number)
-            //    {
-            //        Console.WriteLine(number);
-            //    }
-            //    number++;
-            //}
-            //Console.ReadLine();
-
-
-            //LAB26: Write a C# program to create a menu-driven system for number conversions: 
-            //1.Binary to Decimal
-            //2.Decimal to Binary
-            //3.Decimal to Hexadecimal
-            //Use a switch-case statement to implement this.
-            //Console.WriteLine("Menu:");
-            //Console.WriteLine("1. Binary to Decimal");
-            //Console.WriteLine("2. Decimal to Binary");
-            //Console.WriteLine("3. Decimal to Hexadecimal");
-            //Console.WriteLine("4. Exit");
-            //Console.Write("Enter your choice: ");
-            //int choice = int.Parse(Console.ReadLine());
-            //switch (choice)
-            //{
-            //    case 1:
-            //        Console.Write("Enter a binary number: ");
-            //        string binary = Console.ReadLine();
-            //        int decimalValue = Convert.ToInt32(binary, 2);
-            //        Console.WriteLine($"Decimal: {decimalValue}");
-            //        break;
-
-            //    case 2:
-            //        Console.Write("Enter a decimal number: ");
-            //        int decimalNumber = int.Parse(Console.ReadLine());
-            //        string binaryValue = Convert.ToString(decimalNumber, 2);
-            //        Console.WriteLine($"Binary: {binaryValue}");
-            //        break;
-
-            //    case 3:
-            //        Console.Write("Enter a decimal number: ");
-            //        int decimalNum = int.Parse(Console.ReadLine());
-            //        string hexValue = Convert.ToString(decimalNum, 16).ToUpper();
-            //        Console.WriteLine($"Hexadecimal: {hexValue}");
-            //        break;
-
-            //    case 4:
-            //        Console.WriteLine("Exiting.......");
-            //        Thread.Sleep(1000);
-            //        return;
-
-            //    default:
-            //        Console.WriteLine("Invalid choice. Please try again.");
-            //        break;
-            //}
-
-            //Console.WriteLine();
-            //Console.ReadLine();
-
-
-
-            //LAB27: Write a C# program to reverse a given string using a for loop. 
-            //Console.WriteLine("Enter the string :");
-            //string Str = Console.ReadLine();
-            //string Reversed_str = string.Empty;
-            //for (int i = Str.Length - 1; i >= 0; i--)
-            //{
-            //    Reversed_str += Str[i];
-            //}
-            //Console.WriteLine($"reversed string is {Reversed_str}");
-            //Console.ReadLine();
-
-
-            //LABB28: Write a C# program to count the number of vowels and consonants in a given string using a for 
-            //loop.
-            //Console.WriteLine("Enter the string :");
-            //string String = Console.ReadLine();
-            //int numberofVowels = 0;
-            //int numberofConsonants = 0;
-            //string Str = String.ToLower(); 
-
-            //for (int i = Str.Length - 1; i >= 0; i--)
-            //{
-            //    if (Str[i] == 'a' || Str[i] == 'e' || Str[i] == 'i' || Str[i] == 'o' || Str[i] == 'u')
-            //    {
-            //        numberofVowels++;
             //    }
             //    else
             //    {
-            //        numberofConsonants++;
+            //        Console.WriteLine($"{Name_of_Applicant} is not eligible to apply for the job");
+
             //    }
             //}
-            //Console.WriteLine($"{numberofConsonants} is the total number of consonants ");
-            //Console.WriteLine($"{numberofVowels} is the total number of vowels");
+            //else
+            //{
+            //    Console.WriteLine($"{Name_of_Applicant} is not eligible to apply for the job ");
+            //}
             //Console.ReadLine();
 
 
-            //LAB29: Write a C# program to find the maximum and minimum of 5 numbers entered by the user using a 
-            //for loop.
-            //int temp;
-            //int[] Numbers = new int[5];
-            //Console.WriteLine("Enter 5 Values : ");
-            //for (int i = 0; i < 5; i++)
+            //LAB21
+            //Console.WriteLine("enter the character to be checked :");
+            //char Character_to_Checked = Convert.ToChar(Console.ReadLine());
+            //if (Character_to_Checked == 'a' || Character_to_Checked == 'e' || Character_to_Checked == 'i' || Character_to_Checked == 'o' || Character_to_Checked == 'u' || Character_to_Checked == 'A' || Character_to_Checked == 'E' || Character_to_Checked == 'I' || Character_to_Checked == 'O' || Character_to_Checked == 'U')
             //{
-            //    Numbers[i] = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine($"{Character_to_Checked} is a vowel");
             //}
-            //for (int j = 0; j < 5; j++)
+            //else
             //{
-            //    for (int k = j + 1; k < 5; k++)
+            //    Console.WriteLine($"{Character_to_Checked} is a consonant");
+            //}
+            //Console.ReadLine();
+
+
+            //LAB22
+
+            //Console.WriteLine("Enter the number to be checked : ");
+            //int Number_tobe_Checked = Convert.ToInt32(Console.ReadLine());  
+            //if(Number_tobe_Checked < 0)
+            //{
+            //    Console.WriteLine($"{Number_tobe_Checked} is a negative number");
+            //}
+            //else if (Number_tobe_Checked > 0)
+            //{
+            //    Console.WriteLine($"{Number_tobe_Checked} is a positive number");
+
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{Number_tobe_Checked} is zero");
+            //}
+            //Console.ReadLine();
+
+            //LAB23
+
+
+            //Console.WriteLine("Enter the number to be checked : ");
+            //int Number_tobe_Checked = Convert.ToInt32(Console.ReadLine());
+            //if ((Number_tobe_Checked % 5 == 0) && (Number_tobe_Checked % 11 == 0))
+            //{
+            //    Console.WriteLine($"{Number_tobe_Checked} is divisible by both 5 and 11 ");
+            //}
+            //else {
+            //    Console.WriteLine($"{Number_tobe_Checked} is not divisible by both 5 and 11 ");
+            //}
+            //Console.ReadLine();
+
+
+            //LAB24
+            //Console.WriteLine("enter the first number");
+            //int First_Number = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter the second number");
+            //int Second_Number = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter operation to used (+ - * / ) : ");
+            //char Operator = Convert.ToChar(Console.ReadLine());
+            //if (Operator == '+')
+            //{
+            //    Console.WriteLine($"The output for the addition is {First_Number + Second_Number}");
+            //}
+            //else if (Operator == '-')
+            //{
+            //    Console.WriteLine($"The output for the substraction is {First_Number - Second_Number}");
+            //}
+            //else if (Operator == '*')
+            //{
+            //    Console.WriteLine($"The output for the multiplication is {First_Number * Second_Number}");
+            //}
+            //else if (Operator == '/')
+            //{
+            //    if (Second_Number == 0)
             //    {
-            //        if (Numbers[j] > Numbers[k])
-            //        {
-            //            temp = Numbers[j];
-            //            Numbers[j] = Numbers[k];
-            //            Numbers[k] = temp;
-            //        }
+            //        Console.WriteLine("Division not possible");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"The output for the division is {First_Number / Second_Number}");
             //    }
             //}
-            //Console.WriteLine($"maximum = {Numbers[5 - 1]}  Minimum = {Numbers[0]}");
+            //Console.ReadLine();
+
+            //LAB25
+            //Console.WriteLine("Enter the Name of the student ");
+            //string Name_of_Student = Console.ReadLine();
+            //Console.WriteLine("Enter the marks out od 100");
+            //int Total_Marks = Convert.ToInt32(Console.ReadLine());
+            //if (Total_Marks >= 90)
+            //{
+            //    Console.WriteLine($"The grade of {Name_of_Student} is A ");
+            //}
+            //else if (Total_Marks >= 80 && Total_Marks <= 89)
+            //{
+            //    Console.WriteLine($"The grade of {Name_of_Student} is  B");
+            //}
+            //else if (Total_Marks >= 70 && Total_Marks <= 79)
+            //{
+            //    Console.WriteLine($"The grade of {Name_of_Student} is  C");
+            //}
+            //else if (Total_Marks >= 60 && Total_Marks <= 69)
+            //{
+            //    Console.WriteLine($"The grade of {Name_of_Student} is  D");
+            //}
+            //else if ( Total_Marks < 69)
+            //{
+            //    Console.WriteLine($"The grade of {Name_of_Student} is  F");
+            //}
             //Console.ReadLine();
 
 
-            //LAB30: Write a C# program to count the number of digits in a given number using a while loop.
-            Console.WriteLine("Enter a number: ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            int count = 0;
-            while (number != 0)
+            //LAB26
+            //Console.WriteLine("Enter the first value");
+            //int First_Value = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the second value");
+            //int Second_Value = Convert.ToInt32(Console.ReadLine());
+            //int Swap_Variable = First_Value;
+            //First_Value = Second_Value;
+            //Second_Value = Swap_Variable;
+            //Console.WriteLine($"after swapping the value first value = {First_Value} Second = {Second_Value}"); 
+            //Console.ReadLine();
+            ////without third variable
+            //Console.WriteLine("Enter the first value");
+            //int First_Value_1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the second value");
+            //int Second_Value_1 = Convert.ToInt32(Console.ReadLine());
+            //First_Value_1  = First_Value_1 + Second_Value_1;
+            //Second_Value_1 = First_Value_1 - Second_Value_1;
+            //First_Value_1 = First_Value_1 - Second_Value_1;
+            //Console.WriteLine("swapping without a third variable");
+            //Console.WriteLine($"The values after the swap is First value = {First_Value_1} and the second value = {Second_Value_1}");
+            //Console.ReadLine();
+
+
+            //LAB27
+            //Console.WriteLine("Enter the first value");
+            //int First_Value = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the second value");
+            //int Second_Value = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine($"Output after addition {First_Value + Second_Value}");
+            //Console.WriteLine($"Output after substraction {First_Value - Second_Value}");
+            //Console.WriteLine($"Output after multiplication {First_Value * Second_Value}");
+            //Console.WriteLine($"Output after modulus {First_Value % Second_Value}");
+            //Console.WriteLine($"output of incrementing {First_Value++} and {Second_Value++}");
+            //Console.WriteLine($"output of incrementing {First_Value--} and {Second_Value--}");
+            //if (Second_Value == 0)
+            //{
+            //    Console.WriteLine("Inavild input");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Output after divison {First_Value / Second_Value}");
+            //}
+            //Console.ReadLine();
+
+
+
+
+
+
+
+
+            //LAB28
+
+            //Console.WriteLine("Enter the first value");
+            //Double First_Value = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Enter the second value");
+            //Double Second_Value = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Enter the third value");
+            //Double Third_Value = Convert.ToDouble(Console.ReadLine());
+            //Double Average;
+            //Average = (First_Value + Second_Value + Third_Value) / 3;
+            //Console.WriteLine("The average of the numbers are {0:F2}" , Average);
+            //Console.ReadLine();
+
+
+            //lab29
+            //Console.WriteLine("Enter the amount to be converted");
+            //Double Amount_in_USD = Convert.ToDouble(Console.ReadLine());
+            //Double Amount_in_EUR = Amount_in_USD * 0.85;
+            //Console.WriteLine($"The amount {Amount_in_USD} converted in euros is {Amount_in_EUR} ");
+            //Console.ReadLine();
+
+
+            //LAB30
+            //Console.WriteLine("Enter the value");
+            //Double First_Value = Convert.ToDouble(Console.ReadLine());
+            //if (First_Value <= 100 && First_Value >= 1)
+            //{
+            //    Console.WriteLine($"{First_Value}is in between 1 and 100 now check whether even or odd");
+            //    if (First_Value % 2 == 0)
+            //    {
+            //        Console.WriteLine($"{First_Value} is even ");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"{First_Value} is odd");
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{First_Value} is not in between 1 and 100");
+            //}
+            //Console.ReadLine();
+
+
+            //LAB31
+            //Console.WriteLine("Enter the value");
+            //Double First_Value = Convert.ToDouble(Console.ReadLine());
+            //if (First_Value % 3 == 0 && First_Value % 5 == 0)
+            //{
+            //    Console.WriteLine($"{First_Value} is divisible by both 3 and 5");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{First_Value} is not divisible by both 3 and 5");
+            //}
+            //Console.ReadLine();
+
+
+
+            //LAB32
+            //Console.WriteLine("Enter the year");
+            //int year = Convert.ToInt32(Console.ReadLine());
+            //if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+            //{
+            //    Console.WriteLine($"{year} is a leap year");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{year} is not  leap year");
+            //}
+            //Console.ReadLine();
+
+            //LAB33
+            //Console.WriteLine("Enter the value");
+            //Double First_Value = Convert.ToDouble(Console.ReadLine());
+            //if (First_Value > 0)
+            //{
+            //    if (First_Value % 2 == 0)
+            //    {
+            //        if (First_Value > 50)
+            //        {
+            //            Console.WriteLine($"{First_Value} is positive , even and greater than 50");
+
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine($"{First_Value} is only positive and even");
+            //        }
+
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"{First_Value} is only positive ");
+            //    }
+
+
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{First_Value}   is not positive , even and greater than 50 ");
+            //}
+
+
+            //Console.ReadLine();
+
+
+
+            //LAB34
+            Console.WriteLine("Enter the name of the student");
+            string Name = Console.ReadLine();
+            Console.WriteLine("enter the marks of 1st subject");
+            int First_Subject = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the marks of Second subject");
+            int Second_Subject = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the marks of Third subject");
+            int Third_Subject = Convert.ToInt32(Console.ReadLine());
+            int Failed_Subject = 0;
+            int Average = (First_Subject + Second_Subject + Third_Subject) / 3;
+            if (First_Subject >= 40 && Second_Subject >= 40 && Third_Subject >= 40)
             {
-                number /= 10;
-                count++;
+                if (Average >= 70)
+                {
+                    Console.WriteLine($"{Name} has distinction");
+                }
+                else
+                {
+                    Console.WriteLine($"{Name} has PASSED");
+                }
             }
-            Console.WriteLine("Number of digits: " + count);
+            else
+            {
+                if (First_Subject < 40)
+                {
+                    Failed_Subject += 1;
+                }
+                else if (Second_Subject < 40)
+                {
+                    Failed_Subject += 1;
+                }
+                else if (Third_Subject < 40)
+                {
+                    Failed_Subject += 1;
+                }
+                Console.WriteLine($"{Name} has failed in {Failed_Subject} subjects");
+            }
+
             Console.ReadLine();
+
+
+            //LAB35
+            //Console.WriteLine("Enter the name");
+            //string Name = Console.ReadLine();
+            //Console.WriteLine("Enter the annual salary");
+            //int Annual_Salary = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the age");
+            //int Age = Convert.ToInt32(Console.ReadLine());
+            //int Tax = 0;
+            //if (Annual_Salary <= 10000)
+            //{
+            //    Console.WriteLine($"{Name} has 0 Tax applied");
+            //}
+            //else if (Annual_Salary > 10000 && Annual_Salary <= 50000)
+            //{
+            //    Tax += (10/100) * Annual_Salary;
+            //    if (Age>= 60)
+            //    {
+            //        Tax = Tax - 5000;
+            //    }
+            //    else
+            //    {
+            //        Tax = Tax;
+            //    }
+
+            //    Console.WriteLine($"{Name} has tax to be paid as {Tax}");
+
+            //}
+            //else if (Annual_Salary > 50000)
+            //{
+            //    Tax  += (20 / 100) * Annual_Salary;
+            //    if (Age >= 60)
+            //    {
+            //        Tax = Tax - 5000;
+            //    }
+            //    else
+            //    {
+            //        Tax = Tax;
+            //    }
+
+            //    Console.WriteLine($"{Name} has tax to be paid as {Tax}");
+
+            //}
+
+            //Console.ReadLine();
         }
     }
 }
