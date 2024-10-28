@@ -14,5 +14,7 @@ namespace Inheritence_Assignment
             return a + b;
         }
     }
-    
+    //class DerivedClass : MathOperations
+    //{
+    //}
 }

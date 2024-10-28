@@ -168,17 +168,19 @@
 //Create a class that cannot be inherited using the sealed keyword.
 //Problem: 
 //Create a sealed class MathOperations with a method Add(). Show that it cannot be inherited.
-//class Program
-//{
-//    static void Main()
-//    {
-//        MathOperations mathOps = new MathOperations();
-//        int result = mathOps.Add(3, 5);
-//        Console.WriteLine($"3 + 5 = {result}");
+using Inheritence_Assignment;
+
+class Program
+{
+    static void Main()
+    {
+        MathOperations math = new MathOperations();
+        Console.WriteLine(math.Add(3, 4));
 
 
-//    }
-//}
+    }
+}
+
 
 //=================================================================================================================================================
 //Lab 9. Constructor Chaining 
