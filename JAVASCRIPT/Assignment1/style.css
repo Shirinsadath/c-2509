@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 100px;
+    height: 100px;
+    background-color: #f4f4f4;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: rgb(255, 253, 253);
+    border-radius: 5px;
+}
+h2 {
+    color: #333;
+}
+
+    

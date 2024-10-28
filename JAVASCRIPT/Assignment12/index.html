@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12</title>
+</head>
+
+<body>
+    <h2>Stopwatch</h2>
+    <div class="stopwatch">
+        <div id="display">00:00</div><br>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="stopTimer()">Stop</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+    <script>
+        let timer;
+        let seconds = 0;
+        let minutes = 0;
+
+        function startTimer() {
+            timer = setInterval(updateDisplay, 1000);
+        }
+
+        function stopTimer() {
+            clearInterval(timer);
+        }
+
+        function resetTimer() {
+            clearInterval(timer);
+            seconds = 0;
+            minutes = 0;
+            document.getElementById("display").textContent = "00:00";
+        }
+
+        function updateDisplay() {
+            seconds++;
+            if (seconds == 60) {
+                seconds = 0;
+                minutes++;
+            }
+            let displayMinutes = minutes.toString().padStart(2, '0');
+            let displaySeconds = seconds.toString().padStart(2, '0');
+            document.getElementById("display").textContent = displayMinutes + ":" + displaySeconds;
+        }
+
+    </script>
+    
+</body>
+
+</html>

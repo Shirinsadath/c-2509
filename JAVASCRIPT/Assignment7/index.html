@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7th assignment</title>
+</head>
+<body>
+    <h2>Select a Background Color</h2>
+    <form id="colorform">
+    <input type="color" id="color">
+    <button type="submit">Submit</button>
+</form>
+    <script>
+        document.getElementById("colorform").addEventListener("submit", function() {
+            event.preventDefault();  
+            var color = document.getElementById("color").value;
+            document.body.style.backgroundColor = color;
+        });
+    </script>
+</body>
+</html>
+
+    
+     

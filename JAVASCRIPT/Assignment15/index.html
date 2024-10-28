@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>15</title>
+    </head>
+
+    <body>
+        
+        <div class="carousel">
+            <button id="prev" onclick="previous()">Previous</button>
+            <img id="Images" src="./images/image1.jpg" alt="Carousel Image">
+            <button id="next" onclick="next()">Next</button>
+        </div>
+        <script>
+            let cindex = 0;
+            const images = ["images/image1.jpg", "images/image2.jpg", "images/image3.jpg", "images/image4.jpg", "images/image5.jpg","images/image6.jpg","images/image7.jpg"];
+
+            function image(index) {
+                const carouselImage = document.getElementById("Images");
+                Images.src = images[index];
+            }
+
+            function next() {
+                
+                if (cindex < 6){
+                    cindex = (cindex + 1) ;
+                image(cindex);
+                }
+                else 
+                 {
+                    cindex = 0;
+                    image(cindex);
+                }
+            }
+
+            function previous() {
+                if (cindex >0){
+                cindex = (cindex - 1 ) ;
+                image(cindex);
+                }
+                else if(cindex == 0) {
+                    cindex=cindex+(images.length-1);
+                    image(cindex);
+                }
+            }
+
+        </script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 700px;
+                margin: 0;
+                background-color: #c9ebe7;
+            }
+            
+            .carousel {
+                display: flex;
+                align-items: center;
+            }
+
+            button {
+                padding: 10px 20px;
+                margin: 0 10px;
+                font-size: 18px;
+                border-radius: 10px;
+                background-color: #63b1a0;
+                color: white;
+            }
+
+            button:hover {
+                background-color: #2e6865;
+            }
+
+            img {
+                width: 500px;
+                height: 400px;
+                border-radius: 90px;
+            }
+        </style>
+    </body>
+
+    </html>
+</body>
+
+</html>
