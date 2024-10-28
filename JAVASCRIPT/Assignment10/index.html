@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10</title>
+</head>
+
+<body>
+    <h1>Tip Calculator</h1>
+    <label for="bill">Bill Amount :</label><br>
+    <input type="text" id="Bill"><br><br>
+    <label for="tippercent">tip percentage :</label><br>
+    <input type="text" id="tippercent"><br><br>
+    <button type="button" onclick="tip()">Calculate</button>
+    <br>
+    <input type="text" id="result" disabled> is the total amount.
+
+    <script>
+        function tip() {
+            const Bill = parseInt(document.getElementById("Bill").value);
+            const tippercent = parseInt(document.getElementById("tippercent").value);
+            var result;
+            result = (Bill * (tippercent / 100))+Bill;
+            document.getElementById("result").value = result.toFixed(2) ;
+        }
+    </script>
+</body>
+
+</html>

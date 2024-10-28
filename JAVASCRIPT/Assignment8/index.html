@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8th Assignment</title>
+</head>
+<body>
+   <h1>Simple Calculator</h1>
+   <label for="num1">Number 1 :</label> <br>
+   <input type="text" placeholder="Number 1" id="num1"> <br>
+   <label for="num2">Number 2 :</label><br>
+   <input type="text" placeholder="Number 2" id="num2"><br>
+   <button type="button" onclick="caluculator('add')">Add</button>
+   <button type="button" onclick="caluculator('substract')">Substract</button>
+   <button type="button" onclick="caluculator('multiply')">multiply</button>
+   <button type="button" onclick="caluculator('Divide')">Divide</button>
+   <input type="text" id="result" disabled>
+
+   <script>
+    function caluculator(operation) {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var result;
+    
+    switch(operation) {
+        case 'add':
+            result = num1 + num2;
+            break;
+        case 'substract':
+            result = num1 - num2;
+            break;
+        case 'multiply':
+            result = num1 * num2;
+            break;
+        case 'Divide':
+            if (num2 == 0){
+                result = "error"
+            }
+            else {
+                result = num1 / num2;
+            }
+            break;
+        default:
+            result = "Invalid operation";
+    }
+    
+    document.getElementById("result").value = result;
+}
+
+   </script>
+
+</body>
+</html>

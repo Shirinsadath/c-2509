@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+}
+
+header{
+    height: 90px;
+    width: 100%;
+    background-color: rgb(245, 248, 250);
+}
+
+ header img{
+    padding-left: 48%;
+ }
+ section p{
+    
+    color: rgb(12, 12, 12);
+ }
+ section input{
+    color: rgb(7, 7, 7); 
+    column-rule-color: rgb(20, 95, 159);
+    background-color: rgb(245, 248, 250);
+    box-shadow: 10px;
+    text-align: center;
+ }
+ section {
+    padding-left: 20%;
+    padding-right: 20%;
+ }
+ footer{
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(245, 248, 250);
+    color: black;
+    padding-top: 30px;
+
+ }

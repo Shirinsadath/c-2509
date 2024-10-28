@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+
+header{
+    padding-top: 3%;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 3px 3px grey;
+    text-decoration: underline;
+}
+section{
+    background-image: url("https://th.bing.com/th/id/OIP.HaWJTX342fI1cIO-p2ngRwHaEo?rs=1&pid=ImgDetMain");
+    padding-left: 40%;
+    background-size: cover;
+}
+footer{
+    padding-top: 3%;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 3px 3px grey;
+}

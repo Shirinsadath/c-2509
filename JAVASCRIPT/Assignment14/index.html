@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14</title>
+</head>
+
+<body>
+
+    <div class="quotebox">
+        <p id="quote">Click the button to get a random quote!</p>
+        <button onclick="generateQuote()">Get Quote</button>
+        <script>
+            const quotes = [
+                "The best preparation for tomorrow is doing your best today.",
+                "Perfection is not attainable, but if we chase perfection we can catch excellence.",
+                "Be yourself; everyone else is already taken",
+                "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.",
+                "You only live once, but if you do it right, once is enough."
+            ];
+
+            function generateQuote() {
+                const randomIndex = Math.floor(Math.random() * quotes.length);
+                document.getElementById("quote").textContent = quotes[randomIndex];
+            }
+
+        </script>
+        <style>
+            body {
+            
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 700px;
+                margin: 0;
+                background-color: #9ebfbd;
+            }
+
+            .quotebox {
+                text-align: center;
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.751);
+            }
+
+            #quote {
+                font-size: 20px;
+                margin-bottom: 20px;
+                color: black;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                background-color: #326b68;
+                color: white;
+                
+            }
+
+            button:hover {
+                background-color: #285653;
+            }
+        </style>
+</body>
+
+</html>
