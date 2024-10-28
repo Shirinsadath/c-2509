@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    color: #090909;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+    width: 900px;
+    margin: auto;
+    background-color: #e2e4e8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(56, 55, 55);
+}
+label{
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #1e1c1c;
+    border-radius: 5px;
+    box-shadow: 3px 3px gray;
+}
+
+input[type="submit"] {
+    background-color: #682159;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 92%;
+}
+
