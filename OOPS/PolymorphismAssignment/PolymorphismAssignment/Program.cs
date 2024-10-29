@@ -56,7 +56,7 @@
 //        Vehicle vehicle = new Vehicle();
 //        Car car = new Car();
 //        vehicle.Drive();
-//        car.Drive();    
+//        car.Drive();
 //        Console.ReadLine();
 //    }
 //}
@@ -78,7 +78,7 @@
 //        Payment pay2 = new PayPalPayment();
 //        pay.ProcessPayment();
 //        pay1.ProcessPayment();
-//        pay2.ProcessPayment();  
+//        pay2.ProcessPayment();
 //        Console.ReadLine();
 //    }
 //}
@@ -89,7 +89,32 @@
 //classes Manager and Developer. Include a static field to keep track of the total number of 
 //employees and a static method to display the total count. Use method overriding to demonstrate 
 //polymorphism, while also explaining the need for static members in this context.
+//using PolymorphismAssignment;
 
+//class Program
+//{
+//    static void Main()
+//    {
+//        Employee2 emp1 = new Manager2("Labeeb");
+//        Employee2 emp2 = new Developer2("Shamiya");
+
+//        emp1.Work();  
+//        emp2.Work();  
+
+//        Employee2.DisplayEmployeeCount();  
+//        Console.ReadLine();
+//    }
+
+//}
+
+
+
+//==============================================================================================================================================
+//Assignment 6. Polymorphism with Arrays as Properties in a Class 
+//Create a C# program demonstrating polymorphism using a base class Employee and derived 
+//classes Manager and Developer. In this program, each employee should have a collection of 
+//tasks (stored in an array) assigned to them. Use arrays as properties in the class to handle this
+//data, and demonstrate how polymorphism and arrays work together in the solution. 
 //using PolymorphismAssignment;
 //using static PolymorphismAssignment.Manager;
 
@@ -132,13 +157,13 @@
 //        math.Calculate();
 //        //method overloading
 //        Console.WriteLine(math.Add(5, 7));
-//        Console.WriteLine(math.Add(2.5,4.9));
+//        Console.WriteLine(math.Add(2.5, 4.9));
 
 //        AdvancedMathOperations advancedMath = new AdvancedMathOperations();
 //        //method overriding
 //        advancedMath.Calculate();
 //        //method overloading
-//        Console.WriteLine(advancedMath.Add(10,255,321));
+//        Console.WriteLine(advancedMath.Add(10, 255, 321));
 
 //        Console.ReadLine();
 
@@ -153,18 +178,18 @@
 //these in derived classes to showcase polymorphism. 
 //using PolymorphismAssignment;
 
-//class Program 
+//class Program
 //{
-//    static void Main() 
+//    static void Main()
 //    {
 //        // Array of IShape
-//        IShape[] shapes = new IShape[] 
+//        IShape[] shapes = new IShape[]
 //        {
 //            new Circle2(),
 //            new Rectangle2()
-//        }; 
+//        };
 //        // Call the Draw method on each shape
-//        foreach (var shape in shapes) 
+//        foreach (var shape in shapes)
 //        {
 //            shape.Draw();
 //        }
@@ -180,18 +205,18 @@
 
 //class Program
 //{
-//    static void Main() 
+//    static void Main()
 //    {
 //        //object creation
 //        Car2 myCar = new Car2();
 //        //calling the function in the class
-//        myCar.Move(); 
+//        myCar.Move();
 //        myCar.Draw();
 //        Console.ReadLine();
 
 //    }
 //}
-//==============================================================================================================================
+////==============================================================================================================================
 //Assignment 10. Polymorphism in C# with Readonly Property 
 //Create a C# program that demonstrates polymorphism with a readonly property. Define a base 
 //class and derived classes where each class provides specific behavior for a method, while using a 
@@ -200,9 +225,9 @@
 
 //using PolymorphismAssignment;
 
-//class Program 
+//class Program
 //{
-//    static void Main() 
+//    static void Main()
 //    {
 //        Product[] products = new Product[]
 //        {
