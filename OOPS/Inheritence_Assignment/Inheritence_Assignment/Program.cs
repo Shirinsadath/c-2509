@@ -3,6 +3,7 @@
 //Problem:
 //Create a base class Person with properties like Name and Age. Derive a class Student from
 //Person and add a property Grade. Create objects and display the data. 
+//person.cs
 
 //using Inheritence_Assignment;
 
@@ -24,14 +25,14 @@
 //Create a base class Animal with a method Eat(). Derive a class Dog that inherits Animal and add 
 //a method Bark(). Further derive a class Puppy from Dog and add a method Weep(). Show the 
 //behavior. 
-
+//animal.ccs
 //using Inheritence_Assignment;
 
 //class Program
 //{
 //    static void Main(string[] args)
 //    {
-//        Animal A= new Animal();
+//        Animal A = new Animal();
 //        A.Eat();
 //        Dog D = new Dog();
 //        D.Eat();
@@ -51,6 +52,7 @@
 //Problem: 
 //Create two interfaces IPrintable and IScannable with respective methods Print() and Scan(). 
 //Implement both interfaces in a class PrinterScanner. 
+//PrinterScanner.cs
 //using Inheritence_Assignment;
 
 //class Program
@@ -118,7 +120,7 @@
 //Problem:
 //Create a class Employee with a method Work(). Derive a class Manager that overrides the 
 //Work() method to show a different implementation.
-
+//EMPLOYEE.CS
 //using Inheritence_Assignment;
 
 //class Program
@@ -155,8 +157,8 @@
 //        Vehicle2 bike = new Bike();
 
 
-//        car.Drive(); 
-//        bike.Drive(); 
+//        car.Drive();
+//        bike.Drive();
 
 //        Console.ReadLine();
 //    }
@@ -168,18 +170,18 @@
 //Create a class that cannot be inherited using the sealed keyword.
 //Problem: 
 //Create a sealed class MathOperations with a method Add(). Show that it cannot be inherited.
-using Inheritence_Assignment;
+//using Inheritence_Assignment;
 
-class Program
-{
-    static void Main()
-    {
-        MathOperations math = new MathOperations();
-        Console.WriteLine(math.Add(3, 4));
+//class Program
+//{
+//    static void Main()
+//    {
+//        MathOperations math = new MathOperations();
+//        Console.WriteLine(math.Add(3, 4));
 
 
-    }
-}
+//    }
+//}
 
 
 //=================================================================================================================================================
@@ -188,12 +190,12 @@ class Program
 //Problem:
 //Create a base class Person with a parameterized constructor. Create a derived class Employee
 //that calls the base class constructor. 
-
+//student2
 //using Inheritence_Assignment;
 
 //class Program
 //{
-//    static void Main(string[] args) 
+//    static void Main(string[] args)
 //    {
 
 //        Volunteer volunteer = new Volunteer("shahin", 6252, 214569);
@@ -216,8 +218,8 @@ class Program
 //    static void Main()
 //    {
 //        SportsCar myCar = new SportsCar();
-//        myCar.Drive(); 
-//        myCar.Race();  
+//        myCar.Drive();
+//        myCar.Race();
 //        Console.ReadLine();
 //    }
 //}
@@ -254,9 +256,9 @@ class Program
 //class Program
 //{
 //    static void Main()
-//    {       
-//        Engine engine = new Engine { HorsePower = 150 };       
-//        Car2 car = new Car2 { Engine = engine };        
+//    {
+//        Engine engine = new Engine { HorsePower = 150 };
+//        Car2 car = new Car2 { Engine = engine };
 //        car.ShowEngineDetails();
 //        Console.ReadLine();
 //    }
@@ -266,7 +268,8 @@ class Program
 //Lab 13. Calling Base Class Method Using base 
 //Problem: 
 //Create a base class Person with a method DisplayInfo(). Derive a class Employee that overrides 
-//DisplayInfo() but still calls the base class's DisplayInfo() using base.
+//DisplayInfo() but still calls the base class's DisplayInfo() using base
+//Person3
 //using Inheritence_Assignment;
 
 //class Program
@@ -284,14 +287,14 @@ class Program
 //Problem:
 //Create a base class Person with a property Name. In the derived class Student, hide the Name 
 //property using the new keyword and use base to access the base class's Name property. 
-
+//person4
 //using Inheritence_Assignment;
 
 //class Program
 //{
 //    static void Main()
 //    {
-//        Student student = new Student();
+//        Student3 student = new Student3();
 //        ((Person4)student).Name = "Thasreena k";
 //        student.Name = "Thasreena Sadath";
 //        student.ShowNames();
@@ -310,7 +313,7 @@ class Program
 //using Inheritence_Assignment;
 
 //class Program
-//{ 
+//{
 //    static void Main()
 //    {
 //        Car3 car = new Car3("Toyota");

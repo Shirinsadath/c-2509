@@ -15,7 +15,7 @@ namespace Inheritence_Assignment
             StudentName = studentName;
             StudentId = studentId;
             Console.WriteLine(studentName + studentId);
-        }   
+        }
     }
     public class Volunteer : Student2
     {
@@ -27,7 +27,7 @@ namespace Inheritence_Assignment
 
         }
 
-        
+
 
     }
 

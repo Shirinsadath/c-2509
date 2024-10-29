@@ -10,7 +10,7 @@ namespace Inheritence_Assignment
     {
         public string Name { get; set; }
     }
-    class Student : Person4
+    class Student3 : Person4
     {
         public new string Name { get; set; }
 
