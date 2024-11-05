@@ -433,7 +433,121 @@ class Program
     //====================================================================================================================================================
 
     //Assignment 10. Write a C# program to replace all occurrences of a substring.
+    //static void Main()
+    //{
+    //    Console.WriteLine("Enter the main string:");
+    //    string mainString = Console.ReadLine();
+    //    Console.WriteLine("Enter the substring to replace:"); 
+    //    string oldSubstring = Console.ReadLine(); 
+    //    Console.WriteLine("Enter the new substring:");
+    //    string newSubstring = Console.ReadLine();
 
+    //    string resultString = mainString.Replace(oldSubstring, newSubstring);
+    //    Console.WriteLine("String after replacement:");
+    //    Console.WriteLine(resultString);
+    //}
+
+    //================================================================================================================================================
+    //Assignment 11. Write a C# program to find the longest word in a sentence. 
+
+    //static void Main()
+    //{
+    //    Console.WriteLine("Enter a sentence:"); 
+    //    string sentence = Console.ReadLine();
+    //    string longestWord = FindLongestWord(sentence); 
+    //    Console.WriteLine($"The longest word is: {longestWord}"); 
+    //}
+    //static string FindLongestWord(string sentence) 
+    //{
+    //    string[] words = sentence.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+    //    string longestWord = ""; 
+    //    foreach (string word in words)
+    //    {
+    //        if (word.Length > longestWord.Length)
+    //        { 
+    //            longestWord = word; 
+    //        }
+    //    }
+    //    return longestWord;
+    //}
+    //======================================================================================================================
+    //Assignment 12. Write a C# program to count words in a sentence. 
+    //static void Main()
+    //{
+    //    Console.WriteLine("Enter a sentence:");
+    //    string sentence = Console.ReadLine();
+    //    int wordCount = CountWords(sentence);
+    //    Console.WriteLine($"The number of words in the sentence is: {wordCount}");
+    //}
+    //static int CountWords(string sentence)
+    //{
+    //    if (string.IsNullOrWhiteSpace(sentence))
+    //    {
+    //        return 0;
+    //    }
+    //    string[] words = sentence.Split(new char[] { ' ', '\t', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+    //    int count = 0; 
+    //    foreach (string word in words)
+    //    {
+    //        count++; 
+    //    }
+    //    return count;
+    //}
+
+    //===========================================================================================================================
+    //Assignment 13. Write a C# program to remove duplicate characters from a string.
+
+
+    //static void Main()
+    //{
+    //    Console.WriteLine("Enter a string:");
+    //    string input = Console.ReadLine();
+    //    string result = RemoveDuplicates(input); 
+    //    Console.WriteLine("String after removing duplicates:");
+    //    Console.WriteLine(result);
+    //}
+    //static string RemoveDuplicates(string input) 
+    //{
+    //    string result = ""; 
+    //    foreach (char c in input)
+    //    {
+    //        if (!result.Contains(c)) 
+    //        {
+    //            result += c; 
+    //        }
+    //    }
+    //    return result;
+    //    }
+
+    //==================================================================================================================================
+    //Assignment 14. Write a C# program to check if two strings are anagrams.
+    //static void Main() 
+    //{
+    //    Console.WriteLine("Enter the first string:");
+    //    string str1 = Console.ReadLine(); 
+    //    Console.WriteLine("Enter the second string:");
+    //    string str2 = Console.ReadLine();
+    //    bool areAnagrams = CheckAnagrams(str1, str2); 
+    //    if (areAnagrams) 
+    //    {
+    //        Console.WriteLine("The strings are anagrams."); 
+    //    }
+    //    else 
+    //    {
+    //        Console.WriteLine("The strings are not anagrams.");
+    //    }
+    //}
+    //static bool CheckAnagrams(string str1, string str2)
+    //{
+    //    char[] charArray1 = str1.ToLower().ToCharArray();
+    //    char[] charArray2 = str2.ToLower().ToCharArray();
+    //    Array.Sort(charArray1); Array.Sort(charArray2);
+    //    return new string(charArray1) == new string(charArray2);
+    //}
+
+    //=================================================================================================================
+
+    //Assignment 15. Write a C# program to find the frequency of each character in a string.
 }
 
 
