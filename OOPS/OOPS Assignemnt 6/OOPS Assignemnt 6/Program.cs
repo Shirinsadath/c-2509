@@ -98,6 +98,9 @@
 
 //Assignment 2. Write C# programs to sort an array using bubble sort and insertion sort. 
 
+using System.ComponentModel;
+using System.Globalization;
+
 class Program
 {
     //    static void Main()
@@ -170,87 +173,267 @@ class Program
 
     //Assignment 3. Write C# programs to search an array using linear search and binary 
     //search.
-    static void Main()
-    {
-        Console.WriteLine("Enter the number of elements in the array:");
-        int n = int.Parse(Console.ReadLine());
-        int[] array = new int[n];
-        Console.WriteLine("Enter the elements of the array:");
-        for (int i = 0; i < n; i++)
-        {
-            Console.Write($"Element {i + 1}: ");
-            array[i] = int.Parse(Console.ReadLine());
-        }
-        Console.WriteLine("The array :");
-        PrintArray(array);
-        Console.WriteLine("Enter the element to be searched in linear search");
-        int Element = int.Parse(Console.ReadLine());
-        int LinearSearchResult = LinearSearch(array, Element);
-        if(LinearSearchResult != -1)
-        {
-            Console.WriteLine($"{Element} found after linear search at idex {LinearSearchResult}");
-        }
-        else
-        {
-            Console.WriteLine($"{Element} not found after linear search");
-        }
-        int BinarySearchResult = BinarySearch(array, Element);
-        if (BinarySearchResult == -1)
-        {
-            Console.WriteLine($"{Element} is not found after Binary search");
+    //static void Main()
+    //{
+    //    Console.WriteLine("Enter the number of elements in the array:");
+    //    int n = int.Parse(Console.ReadLine());
+    //    int[] array = new int[n];
+    //    Console.WriteLine("Enter the elements of the array:");
+    //    for (int i = 0; i < n; i++)
+    //    {
+    //        Console.Write($"Element {i + 1}: ");
+    //        array[i] = int.Parse(Console.ReadLine());
+    //    }
+    //    Console.WriteLine("The array :");
+    //    PrintArray(array);
+    //    Console.WriteLine("Enter the element to be searched in linear search");
+    //    int Element = int.Parse(Console.ReadLine());
+    //    int LinearSearchResult = LinearSearch(array, Element);
+    //    if(LinearSearchResult != -1)
+    //    {
+    //        Console.WriteLine($"{Element} found after linear search at idex {LinearSearchResult}");
+    //    }
+    //    else
+    //    {
+    //        Console.WriteLine($"{Element} not found after linear search");
+    //    }
+    //    int BinarySearchResult = BinarySearch(array, Element);
+    //    if (BinarySearchResult == -1)
+    //    {
+    //        Console.WriteLine($"{Element} is not found after Binary search");
 
-        }
-        else
-        {
-            Console.WriteLine($"{Element}  found after binary search at index {BinarySearchResult}");
-        }
+    //    }
+    //    else
+    //    {
+    //        Console.WriteLine($"{Element}  found after binary search at index {BinarySearchResult}");
+    //    }
 
-    }
-    static void PrintArray(int[] array)
-    {
-        foreach (int element in array)
-        {
-            Console.Write(element + " ");
-        }
-        Console.WriteLine();
+    //}
+    //static void PrintArray(int[] array)
+    //{
+    //    foreach (int element in array)
+    //    {
+    //        Console.Write(element + " ");
+    //    }
+    //    Console.WriteLine();
 
-    }
-    static int LinearSearch( int[] array, int Element)
-    {
-        
-        for (int i = 0;i<array.Length;i++)
-        {
-            if (Element== array[i])
-            {
-                return i;
-            }
-        }
-        return -1;
-    }
-    static int BinarySearch(int[] array, int Element)
-    {
-        Array.Sort(array);
-        int low = 0;
-        int high = array.Length - 1;
-        while (low <= high)
-        {
-            int mid = (low + high)/2;
-            if (array[mid]==Element)
-            {
-                return mid;
-            }
-            else if (array[mid] < Element)
-            {
-                low = mid + 1;
-            }
-            else
-            {
-                high = mid - 1;
-            }
-        }
-        return -1;
+    //}
+    //static int LinearSearch( int[] array, int Element)
+    //{
 
-    }
+    //    for (int i = 0;i<array.Length;i++)
+    //    {
+    //        if (Element== array[i])
+    //        {
+    //            return i;
+    //        }
+    //    }
+    //    return -1;
+    //}
+    //static int BinarySearch(int[] array, int Element)
+    //{
+    //    Array.Sort(array);
+    //    int low = 0;
+    //    int high = array.Length - 1;
+    //    while (low <= high)
+    //    {
+    //        int mid = (low + high)/2;
+    //        if (array[mid]==Element)
+    //        {
+    //            return mid;
+    //        }
+    //        else if (array[mid] < Element)
+    //        {
+    //            low = mid + 1;
+    //        }
+    //        else
+    //        {
+    //            high = mid - 1;
+    //        }
+    //    }
+    //    return -1;
+
+    //}
+
+    //===========================================================================================================================================================
+
+    //Assignment 4. Array Calculations: write C# programs for finding median, mode value, 
+    //highest, second highest and duplicate elements in an array.
+
+    //static void Main(string[] args)
+    //{
+    //    Console.WriteLine("Enter the number elements in the array");
+    //    int n = int.Parse(Console.ReadLine());
+    //    int[] array = new int[n];
+    //    Console.WriteLine("Enter the elements of the array:");
+    //    for (int i = 0; i < n; i++)
+    //    {
+    //        Console.Write($"Element {i + 1}: ");
+    //        array[i] = int.Parse(Console.ReadLine());
+    //    }
+    //    Console.WriteLine("The array :");
+    //    PrintArray(array);
+    //    Console.WriteLine($"Median: {FindMedian(array, n)}");
+    //    Console.WriteLine($"Mode: {FindMode(array)}");
+    //    Console.WriteLine($"Highest: {FindHighest(array,n)}");
+    //    Console.WriteLine($"Second Highest: {FindSecondHighest(array, n)}");
+    //    var duplicates = FindDuplicates(array);
+    //    Console.WriteLine("Duplicates:");
+    //    foreach (var item in duplicates)
+    //    {
+    //        Console.WriteLine(item);
+    //    }
+
+    //}
+    //static void PrintArray(int[] array)
+    //{
+    //    foreach (int element in array)
+    //    {
+    //        Console.Write(element + " ");
+    //    }
+    //    Console.WriteLine();
+
+    //}
+    //static double FindMedian(int[] array, int n)
+    //{
+    //    if ( n%2 == 0 )
+    //    {
+    //        return array[(n+1)/2];
+    //    }
+    //    else
+    //    {
+    //        return (array[n/2] + array[(n/2)+1])/2;
+    //    }
+    //}
+    //static int FindMode(int[] array)
+    //{
+    //    return array.GroupBy(x => x).OrderByDescending(g => g.Count()).First().Key;
+    //}
+    //static int FindHighest(int[] array, int n)
+    //{
+    //    Array.Sort(array);
+    //    return array[n - 1];
+    //}
+
+    //static int FindSecondHighest(int[] array, int n)
+    //{
+    //    Array.Sort(array);
+    //    return array[n - 2];
+    //}
+    //static List<int> FindDuplicates(int[] array)
+    //{
+    //    return array.GroupBy(x => x).Where(g => g.Count() > 1).Select(g => g.Key).ToList();
+    //}
+
+    //=====================================================================================================================================================================================
+
+    //Assignment 5. Write a C# programs to count vowels, consonants and special characters.
+
+    //static void Main(string[] args)
+    //{
+    //    Console.WriteLine("Enter a string:");
+    //    string input = Console.ReadLine();
+    //    input.ToLower();
+    //    int vowelCount = 0;
+    //    int consonantCount = 0;
+    //    int specialCharCount = 0; 
+    //    foreach (char c in input) 
+    //    {
+
+    //        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c== 'u') 
+    //        {
+    //            vowelCount++; 
+    //        }
+    //        else if ((c >= 'a' && c <= 'z'))
+    //        {
+    //            consonantCount++;
+    //        }
+    //        else if (!char.IsLetterOrDigit(c) && !char.IsWhiteSpace(c))
+    //        {
+    //            specialCharCount++; 
+    //        }
+    //    }
+    //    Console.WriteLine($"Vowels: {vowelCount}"); 
+    //    Console.WriteLine($"Consonants: {consonantCount}");
+    //    Console.WriteLine($"Special Characters: {specialCharCount}");
+    //}
+
+    //==========================================================================================================================
+    //static void Main()
+    //{
+    //    Console.WriteLine("Enter a string:");
+    //    string input = Console.ReadLine();
+    //    string reversedString = ReverseString(input);
+    //    Console.WriteLine($"Reversed string: {reversedString}");
+    //}
+    //static string ReverseString(string input) 
+    //{
+    //    char[] charArray = input.ToCharArray();
+    //    Array.Reverse(charArray);
+    //    return new string(charArray);
+    //}
+
+    //====================================================================================================================================================
+
+    //Assignment 7. Write a C# program to find substring occurrence within a main string. 
+
+    //static void Main()
+    //{
+    //    Console.WriteLine("Enter the main string:");
+    //    string mainString = Console.ReadLine(); 
+    //    Console.WriteLine("Enter the substring to find:"); 
+    //    string substring = Console.ReadLine();
+    //    int occurrenceCount = FindSubstring(mainString, substring);
+    //    Console.WriteLine($"The substring '{substring}' occurs {occurrenceCount} times in the main string.");
+    //}
+    //static int FindSubstring(string mainString, string substring)
+    //{
+    //    int count = 0;
+    //    int index = 0;
+    //    while ((index = mainString.IndexOf(substring, index)) != -1)
+    //    {
+    //        count++;
+    //        index += substring.Length;
+
+    //    } 
+    //    return count;
+
+    //}
+
+    //=======================================================================================================================================
+
+    //Assignment 8. Write a C# program to convert string to uppercase, lowercase, and title case. 
+
+    //static void Main()
+    //{
+    //    Console.WriteLine("Enter a string:");
+    //    string input = Console.ReadLine();
+    //    // Convert to uppercase
+    //    string upperCase = input.ToUpper();
+    //    Console.WriteLine("Uppercase: " + upperCase);
+    //    // Convert to lowercase
+    //    string lowerCase = input.ToLower();
+    //    Console.WriteLine("Lowercase: " + lowerCase);
+    //    // Convert to title case
+    //    TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
+    //    string titleCase = textInfo.ToTitleCase(input.ToLower());  
+    //    Console.WriteLine("Title Case: " + titleCase);
+    //}
+
+    //=============================================================================================================================
+    //Assignment 9. Write a C# program to remove whitespace from a string. 
+    //static void Main()
+    //{
+    //    Console.WriteLine("Enter a string:");
+    //    string input = Console.ReadLine();
+    //    // Remove whitespace
+    //    string withoutWhitespace = input.Replace(" ", ""); 
+    //    Console.WriteLine("String without whitespace: " + withoutWhitespace);
+    //}
+    //====================================================================================================================================================
+
+    //Assignment 10. Write a C# program to replace all occurrences of a substring.
+
 }
 
 
