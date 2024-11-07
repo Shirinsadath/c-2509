@@ -359,6 +359,8 @@ class Program
     //}
 
     //==========================================================================================================================
+    // Assignment 18. Write a C# program to check if a string contains only digits.
+
     //static void Main()
     //{
     //    Console.WriteLine("Enter a string:");
@@ -541,15 +543,122 @@ class Program
     //{
     //    char[] charArray1 = str1.ToLower().ToCharArray();
     //    char[] charArray2 = str2.ToLower().ToCharArray();
-    //    Array.Sort(charArray1); Array.Sort(charArray2);
+    //    Array.Sort(charArray1);
+    //    Array.Sort(charArray2);
     //    return new string(charArray1) == new string(charArray2);
     //}
 
     //=================================================================================================================
 
     //Assignment 15. Write a C# program to find the frequency of each character in a string.
-}
 
+    static void Main()
+    {
+        Console.WriteLine("Enter a string:");
+        string input = Console.ReadLine();
+        int[] frequency = new int[256];
+        foreach (char c in input)
+        {
+            frequency[c]++;
+        }
+        Console.WriteLine("Character frequencies:");
+        for (int i = 0; i < frequency.Length; i++)
+        {
+            if (frequency[i] > 0)
+            {
+                Console.WriteLine($"{(char)i}: {frequency[i]}");
+            }
+        }
+    }
+
+    //==============================================================================================================================
+    //Assignment 16. Write a C# program to find the first non-repeating character in a string.
+
+    //static void Main()
+    //{
+    //    Console.WriteLine("Enter a string:");
+    //    string input = Console.ReadLine();
+    //    char result = FindFirstNonRepeatingCharacter(input);
+    //    if (result != '\0')
+    //    {
+    //        Console.WriteLine($"The first non-repeating character is: {result}");
+    //    }
+    //    else
+    //    {
+    //        Console.WriteLine("No non-repeating character found.");
+    //    }
+    //}
+    //static char FindFirstNonRepeatingCharacter(string input)
+    //{
+    //    int[] charCount = new int[256];
+
+    //    foreach (char c in input)
+    //    {
+    //        charCount[c]++;
+    //    }
+    //    foreach (char c in input)
+    //    {
+    //        if (charCount[c] == 1)
+    //        {
+    //            return c;
+    //        }
+    //    }
+    //    return '\0';
+    //}
+    //==================================================================================================
+    //Assignment 17. Write a C# program to reverse words in a sentence. 
+
+    //static void Main()
+    //{
+    //    Console.WriteLine("Enter a sentence :");
+    //    string sentence = Console.ReadLine();
+    //    string reversedSentence = ReverseWords(sentence);
+    //    Console.WriteLine("Reversed sentence:");
+    //    Console.WriteLine(reversedSentence);
+    //}
+    //static string ReverseWords(string sentence)
+    //{
+    //    string[] words = sentence.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+    //    Array.Reverse(words);
+    //    return string.Join(" ", words);
+    //}
+
+    //=============================================================================================================================================
+    //Assignment 18. Write a C# program to check if a string contains only digits.
+    //static void Main(string[] args)
+    //{
+    //    Console.WriteLine("Enter a string :");
+    //    string String = Console.ReadLine();
+    //    CountofDigits(String); ;
+    //    Console.ReadLine();
+    //}
+    //static void  CountofDigits(string String)
+    //{
+    //    int result = 0 ;
+
+
+    //    foreach (char c in String)
+    //    {
+    //        if(char.IsDigit(c))
+    //        {
+    //            result++;
+    //        }
+    //        else
+    //        {
+    //            result--; ;
+    //        }
+    //    }
+    //    if (result == String.Length)
+    //    {
+    //        Console.WriteLine($"{String} contains only digit ");
+    //    }
+    //    else
+    //    {
+    //        Console.WriteLine($"{String} contains both digits and non-digit characters");
+    //    }
+    //}
+  
+}
 
 
 
